@@ -211,7 +211,7 @@ function format_bulan($waktu)
 
     );
 
-    $bl = date('n', strtotime($waktu));
+    $bl = $waktu;
 
     $bulan = $bulan_array[$bl];
 

@@ -1,6 +1,6 @@
 <?php
 // n = forcasting bulan ke berapa ?
-$n = 11; //$this->session->userdata('bul');
+$n = 10; //$this->session->userdata('bul');
 //nilai alpha
 $alpa1 = 0.1;
 $alpa2 = 0.2;
@@ -91,23 +91,59 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 2 = ' . $ft2a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 2 ' . $ft2i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
     }
 
     //mencari forcasting bulan ke 3
@@ -220,23 +256,104 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 3 = ' . $ft3a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 3 ' . $ft3i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
     }
 
     //mencari forcasting bulan ke 4
@@ -386,23 +503,149 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 4 = ' . $ft4a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast3
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 4 ' . $ft4i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast3
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
     }
 
 
@@ -590,23 +833,194 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 5 = ' . $ft5a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 5 ' . $ft5i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
     }
 
     //mencari forcasting bulan ke 6
@@ -830,23 +1244,239 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 6 = ' . $ft6a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 6' . $ft6d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 6 ' . $ft6i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
     }
 
     //mencari forcasting bulan ke 7
@@ -1108,23 +1738,284 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 7 = ' . $ft7a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 7' . $ft7d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 7 ' . $ft7i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
     }
 
     //mencari forcasting bulan ke 8
@@ -1422,23 +2313,329 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 8 = ' . $ft8a . ' DAN ALPHA' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
+
+        //forcast8
+        $ft8 = $ft8a;
+        $e8 = $E8a;
+        $m8 = $M8a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8b . ' DAN ALPHA' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
+
+        //forcast8
+        $ft8 = $ft8b;
+        $e8 = $E8b;
+        $m8 = $M8b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8c . ' DAN ALPHA' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
+
+        //forcast8
+        $ft8 = $ft8c;
+        $e8 = $E8c;
+        $m8 = $M8c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 8' . $ft8d . ' DAN ALPHA' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
+
+        //forcast8
+        $ft8 = $ft8d;
+        $e8 = $E8d;
+        $m8 = $M8d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8e . ' DAN ALPHA' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
+
+        //forcast8
+        $ft8 = $ft8e;
+        $e8 = $E8e;
+        $m8 = $M8e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8f . ' DAN ALPHA' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
+
+        //forcast8
+        $ft8 = $ft8f;
+        $e8 = $E8f;
+        $m8 = $M8f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8g . ' DAN ALPHA' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
+
+        //forcast8
+        $ft8 = $ft8g;
+        $e8 = $E8g;
+        $m8 = $M8g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8h . ' DAN ALPHA' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
+
+        //forcast8
+        $ft8 = $ft8h;
+        $e8 = $E8h;
+        $m8 = $M8h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 8 ' . $ft8i . ' DAN ALPHA' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
+
+        //forcast8
+        $ft8 = $ft8i;
+        $e8 = $E8i;
+        $m8 = $M8i;
     }
 
     //mencari forcasting bulan ke 9
@@ -1773,25 +2970,375 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 9 = ' . $ft9a . ' DAN ALPHA ' . $alpa1;
-    } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9b . ' DAN ALPHA ' . $alpa2;
-    } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9c . ' DAN ALPHA ' . $alpa3;
-    } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 9' . $ft9d . ' DAN ALPHA ' . $alpa4;
-    } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9e . ' DAN ALPHA ' . $alpa5;
-    } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9f . ' DAN ALPHA ' . $alpa6;
-    } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9g . ' DAN ALPHA ' . $alpa7;
-    } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9h . ' DAN ALPHA ' . $alpa8;
-    } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 9 ' . $ft9i . ' DAN ALPHA ' . $alpa9;
-    }
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
 
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
+
+        //forcast8
+        $ft8 = $ft8a;
+        $e8 = $E8a;
+        $m8 = $M8a;
+
+        //forcast9
+        $ft9 = $ft9a;
+        $e9 = $E9a;
+        $m9 = $M9a;
+    } else if ($cari == $MAE02) {
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
+
+        //forcast8
+        $ft8 = $ft8b;
+        $e8 = $E8b;
+        $m8 = $M8b;
+
+        //forcast9
+        $ft9 = $ft9b;
+        $e9 = $E9b;
+        $m9 = $M9b;
+    } else if ($cari == $MAE03) {
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
+
+        //forcast8
+        $ft8 = $ft8c;
+        $e8 = $E8c;
+        $m8 = $M8c;
+
+        //forcast9
+        $ft9 = $ft9c;
+        $e9 = $E9c;
+        $m9 = $M9c;
+    } else if ($cari == $MAE04) {
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
+
+        //forcast8
+        $ft8 = $ft8d;
+        $e8 = $E8d;
+        $m8 = $M8d;
+
+        //forcast9
+        $ft9 = $ft9d;
+        $e9 = $E9d;
+        $m9 = $M9d;
+    } else if ($cari == $MAE05) {
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
+
+        //forcast8
+        $ft8 = $ft8e;
+        $e8 = $E8e;
+        $m8 = $M8e;
+
+        //forcast9
+        $ft9 = $ft9e;
+        $e9 = $E9e;
+        $m9 = $M9e;
+    } else if ($cari == $MAE06) {
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
+
+        //forcast8
+        $ft8 = $ft8f;
+        $e8 = $E8f;
+        $m8 = $M8f;
+
+        //forcast9
+        $ft9 = $ft9f;
+        $e9 = $E9f;
+        $m9 = $M9f;
+    } else if ($cari == $MAE07) {
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
+
+        //forcast8
+        $ft8 = $ft8g;
+        $e8 = $E8g;
+        $m8 = $M8g;
+
+        //forcast9
+        $ft9 = $ft9g;
+        $e9 = $E9g;
+        $m9 = $M9g;
+    } else if ($cari == $MAE08) {
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
+
+        //forcast8
+        $ft8 = $ft8h;
+        $e8 = $E8h;
+        $m8 = $M8h;
+
+        //forcast9
+        $ft9 = $ft9h;
+        $e9 = $E9h;
+        $m9 = $M9h;
+    } else if ($cari == $MAE09) {
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
+
+        //forcast8
+        $ft8 = $ft8i;
+        $e8 = $E8i;
+        $m8 = $M8i;
+
+        //forcast9
+        $ft9 = $ft9i;
+        $e9 = $E9i;
+        $m9 = $M9i;
+    }
 
     //mencari forcasting bulan ke 10
 } else if ($n == "10") {
@@ -2161,23 +3708,419 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10a . ' DAN ALPHA ' . $alpa1;
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
+
+        //forcast8
+        $ft8 = $ft8a;
+        $e8 = $E8a;
+        $m8 = $M8a;
+
+        //forcast9
+        $ft9 = $ft9a;
+        $e9 = $E9a;
+        $m9 = $M9a;
+
+        //forcast10
+        $ft10 = $ft10a;
+        $e10 = $E10a;
+        $m10 = $M10a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10b . ' DAN ALPHA ' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
+
+        //forcast8
+        $ft8 = $ft8b;
+        $e8 = $E8b;
+        $m8 = $M8b;
+
+        //forcast9
+        $ft9 = $ft9b;
+        $e9 = $E9b;
+        $m9 = $M9b;
+
+        //forcast10
+        $ft10 = $ft10b;
+        $e10 = $E10b;
+        $m10 = $M10b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10c . ' DAN ALPHA ' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
+
+        //forcast8
+        $ft8 = $ft8c;
+        $e8 = $E8c;
+        $m8 = $M8c;
+
+        //forcast9
+        $ft9 = $ft9c;
+        $e9 = $E9c;
+        $m9 = $M9c;
+
+        //forcast10
+        $ft10 = $ft10c;
+        $e10 = $E10c;
+        $m10 = $M10c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10d . ' DAN ALPHA ' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
+
+        //forcast8
+        $ft8 = $ft8d;
+        $e8 = $E8d;
+        $m8 = $M8d;
+
+        //forcast9
+        $ft9 = $ft9d;
+        $e9 = $E9d;
+        $m9 = $M9d;
+
+        //forcast10
+        $ft10 = $ft10d;
+        $e10 = $E10d;
+        $m10 = $M10d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10e . ' DAN ALPHA ' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
+
+        //forcast8
+        $ft8 = $ft8e;
+        $e8 = $E8e;
+        $m8 = $M8e;
+
+        //forcast9
+        $ft9 = $ft9e;
+        $e9 = $E9e;
+        $m9 = $M9e;
+
+        //forcast10
+        $ft10 = $ft10e;
+        $e10 = $E10e;
+        $m10 = $M10e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10f . ' DAN ALPHA ' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
+
+        //forcast8
+        $ft8 = $ft8f;
+        $e8 = $E8f;
+        $m8 = $M8f;
+
+        //forcast9
+        $ft9 = $ft9f;
+        $e9 = $E9f;
+        $m9 = $M9f;
+
+        //forcast10
+        $ft10 = $ft10f;
+        $e10 = $E10f;
+        $m10 = $M10f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10g . ' DAN ALPHA ' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
+
+        //forcast8
+        $ft8 = $ft8g;
+        $e8 = $E8g;
+        $m8 = $M8g;
+
+        //forcast9
+        $ft9 = $ft9g;
+        $e9 = $E9g;
+        $m9 = $M9g;
+
+        //forcast10
+        $ft10 = $ft10g;
+        $e10 = $E10g;
+        $m10 = $M10g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10h . ' DAN ALPHA ' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
+
+        //forcast8
+        $ft8 = $ft8h;
+        $e8 = $E8h;
+        $m8 = $M8h;
+
+        //forcast9
+        $ft9 = $ft9h;
+        $e9 = $E9h;
+        $m9 = $M9h;
+
+        //forcast10
+        $ft10 = $ft10h;
+        $e10 = $E10h;
+        $m10 = $M10h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 10 = ' . $ft10i . ' DAN ALPHA ' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
+
+        //forcast8
+        $ft8 = $ft8i;
+        $e8 = $E8i;
+        $m8 = $M8i;
+
+        //forcast9
+        $ft9 = $ft9i;
+        $e9 = $E9i;
+        $m9 = $M9i;
+
+        //forcast10
+        $ft10 = $ft10i;
+        $e10 = $E10i;
+        $m10 = $M10i;
     }
 
     //mencari forcasting bulan ke 11
@@ -2575,7 +4518,7 @@ if ($n == "1") {
     $E11i = $a11 - $ft11i;
     $M11i = abs($E11i);
 
-    //cari forcast 10 dengan EROR terkecil
+    //cari forcast 11 dengan EROR terkecil
     $MAE01 = ($M1 + $M2a + $M3a + $M4a + $M5a + $M6a + $M7a + $M8a + $M9a + $M10a) / 10;
     $MAE02 = ($M1 + $M2b + $M3b + $M4b + $M5b + $M6b + $M7b + $M8b + $M9b + $M10b) / 10;
     $MAE03 = ($M1 + $M2c + $M3c + $M4c + $M5c + $M6c + $M7c + $M8c + $M9c + $M10c) / 10;
@@ -2588,23 +4531,465 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11a . ' DAN ALPHA ' . $alpa1;
+
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
+
+        //forcast8
+        $ft8 = $ft8a;
+        $e8 = $E8a;
+        $m8 = $M8a;
+
+        //forcast9
+        $ft9 = $ft9a;
+        $e9 = $E9a;
+        $m9 = $M9a;
+
+        //forcast10
+        $ft10 = $ft10a;
+        $e10 = $E10a;
+        $m10 = $M10a;
+
+        //forcast11
+        $ft11 = $ft11a;
+        $e11 = $E11a;
+        $m11 = $M11a;
     } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11b . ' DAN ALPHA ' . $alpa2;
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
+
+        //forcast8
+        $ft8 = $ft8b;
+        $e8 = $E8b;
+        $m8 = $M8b;
+
+        //forcast9
+        $ft9 = $ft9b;
+        $e9 = $E9b;
+        $m9 = $M9b;
+
+        //forcast10
+        $ft10 = $ft10b;
+        $e10 = $E10b;
+        $m10 = $M10b;
+
+        //forcast11
+        $ft11 = $ft11b;
+        $e11 = $E11b;
+        $m11 = $M11b;
     } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11c . ' DAN ALPHA ' . $alpa3;
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
+
+        //forcast8
+        $ft8 = $ft8c;
+        $e8 = $E8c;
+        $m8 = $M8c;
+
+        //forcast9
+        $ft9 = $ft9c;
+        $e9 = $E9c;
+        $m9 = $M9c;
+
+        //forcast10
+        $ft10 = $ft10c;
+        $e10 = $E10c;
+        $m10 = $M10c;
+
+        //forcast11
+        $ft11 = $ft11c;
+        $e11 = $E11c;
+        $m11 = $M11c;
     } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11d . ' DAN ALPHA ' . $alpa4;
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
+
+        //forcast8
+        $ft8 = $ft8d;
+        $e8 = $E8d;
+        $m8 = $M8d;
+
+        //forcast9
+        $ft9 = $ft9d;
+        $e9 = $E9d;
+        $m9 = $M9d;
+
+        //forcast10
+        $ft10 = $ft10d;
+        $e10 = $E10d;
+        $m10 = $M10d;
+
+        //forcast11
+        $ft11 = $ft11d;
+        $e11 = $E11d;
+        $m11 = $M11d;
     } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11e . ' DAN ALPHA ' . $alpa5;
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
+
+        //forcast8
+        $ft8 = $ft8e;
+        $e8 = $E8e;
+        $m8 = $M8e;
+
+        //forcast9
+        $ft9 = $ft9e;
+        $e9 = $E9e;
+        $m9 = $M9e;
+
+        //forcast10
+        $ft10 = $ft10e;
+        $e10 = $E10e;
+        $m10 = $M10e;
+
+        //forcast11
+        $ft11 = $ft11e;
+        $e11 = $E11e;
+        $m11 = $M11e;
     } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11f . ' DAN ALPHA ' . $alpa6;
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
+
+        //forcast8
+        $ft8 = $ft8f;
+        $e8 = $E8f;
+        $m8 = $M8f;
+
+        //forcast9
+        $ft9 = $ft9f;
+        $e9 = $E9f;
+        $m9 = $M9f;
+
+        //forcast10
+        $ft10 = $ft10f;
+        $e10 = $E10f;
+        $m10 = $M10f;
+
+        //forcast11
+        $ft11 = $ft11f;
+        $e11 = $E11f;
+        $m11 = $M11f;
     } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11g . ' DAN ALPHA ' . $alpa7;
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
+
+        //forcast8
+        $ft8 = $ft8g;
+        $e8 = $E8g;
+        $m8 = $M8g;
+
+        //forcast9
+        $ft9 = $ft9g;
+        $e9 = $E9g;
+        $m9 = $M9g;
+
+        //forcast10
+        $ft10 = $ft10g;
+        $e10 = $E10g;
+        $m10 = $M10g;
+
+        //forcast11
+        $ft11 = $ft11g;
+        $e11 = $E11g;
+        $m11 = $M11g;
     } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11h . ' DAN ALPHA ' . $alpa8;
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
+
+        //forcast8
+        $ft8 = $ft8h;
+        $e8 = $E8h;
+        $m8 = $M8h;
+
+        //forcast9
+        $ft9 = $ft9h;
+        $e9 = $E9h;
+        $m9 = $M9h;
+
+        //forcast10
+        $ft10 = $ft10h;
+        $e10 = $E10h;
+        $m10 = $M10h;
+
+        //forcast11
+        $ft11 = $ft11h;
+        $e11 = $E11h;
+        $m11 = $M11h;
     } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 11 = ' . $ft11i . ' DAN ALPHA ' . $alpa9;
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
+
+        //forcast8
+        $ft8 = $ft8i;
+        $e8 = $E8i;
+        $m8 = $M8i;
+
+        //forcast9
+        $ft9 = $ft9i;
+        $e9 = $E9i;
+        $m9 = $M9i;
+
+        //forcast10
+        $ft10 = $ft10i;
+        $e10 = $E10i;
+        $m10 = $M10i;
+
+        //forcast11
+        $ft11 = $ft11i;
+        $e11 = $E11i;
+        $m11 = $M11i;
     }
 
     //mencari forcasting bulan ke 12
@@ -3053,24 +5438,510 @@ if ($n == "1") {
 
     $cari = min($MAE01, $MAE02, $MAE03, $MAE04, $MAE05, $MAE06, $MAE07, $MAE08, $MAE09);
     if ($cari == $MAE01) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12a . ' DAN ALPHA ' . $alpa1;
-    } else if ($cari == $MAE02) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12b . ' DAN ALPHA ' . $alpa2;
-    } else if ($cari == $MAE03) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12c . ' DAN ALPHA ' . $alpa3;
-    } else if ($cari == $MAE04) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12d . ' DAN ALPHA ' . $alpa4;
-    } else if ($cari == $MAE05) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12e . ' DAN ALPHA ' . $alpa5;
-    } else if ($cari == $MAE06) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12f . ' DAN ALPHA ' . $alpa6;
-    } else if ($cari == $MAE07) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12g . ' DAN ALPHA ' . $alpa7;
-    } else if ($cari == $MAE08) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12h . ' DAN ALPHA ' . $alpa8;
-    } else if ($cari == $MAE09) {
-        echo '<br>INI DIA FORCASTING 12 = ' . $ft12i . ' DAN ALPHA ' . $alpa9;
-    }
 
+        //forcast2
+        $alpa = $alpa1;
+        $ft2 = $ft2a;
+        $e2 = $E2a;
+        $m2 = $M2a;
+
+        //forcast3
+        $ft3 = $ft3a;
+        $e3 = $E3a;
+        $m3 = $M3a;
+
+        //forcast4
+        $ft4 = $ft4a;
+        $e4 = $E4a;
+        $m4 = $M4a;
+
+        //forcast5
+        $ft5 = $ft5a;
+        $e5 = $E5a;
+        $m5 = $M5a;
+
+        //forcast6
+        $ft6 = $ft6a;
+        $e6 = $E6a;
+        $m6 = $M6a;
+
+        //forcast7
+        $ft7 = $ft7a;
+        $e7 = $E7a;
+        $m7 = $M7a;
+
+        //forcast8
+        $ft8 = $ft8a;
+        $e8 = $E8a;
+        $m8 = $M8a;
+
+        //forcast9
+        $ft9 = $ft9a;
+        $e9 = $E9a;
+        $m9 = $M9a;
+
+        //forcast10
+        $ft10 = $ft10a;
+        $e10 = $E10a;
+        $m10 = $M10a;
+
+        //forcast11
+        $ft11 = $ft11a;
+        $e11 = $E11a;
+        $m11 = $M11a;
+
+        //forcast12
+        $ft12 = $ft12a;
+        $e12 = $E12a;
+        $m12 = $M12a;
+    } else if ($cari == $MAE02) {
+        //forcast2
+        $alpa = $alpa2;
+        $ft2 = $ft2b;
+        $e2 = $E2b;
+        $m2 = $M2b;
+
+        //forcast3
+        $ft3 = $ft3b;
+        $e3 = $E3b;
+        $m3 = $M3b;
+
+        //forcast4
+        $ft4 = $ft4b;
+        $e4 = $E4b;
+        $m4 = $M4b;
+
+        //forcast5
+        $ft5 = $ft5b;
+        $e5 = $E5b;
+        $m5 = $M5b;
+
+        //forcast6
+        $ft6 = $ft6b;
+        $e6 = $E6b;
+        $m6 = $M6b;
+
+        //forcast7
+        $ft7 = $ft7b;
+        $e7 = $E7b;
+        $m7 = $M7b;
+
+        //forcast8
+        $ft8 = $ft8b;
+        $e8 = $E8b;
+        $m8 = $M8b;
+
+        //forcast9
+        $ft9 = $ft9b;
+        $e9 = $E9b;
+        $m9 = $M9b;
+
+        //forcast10
+        $ft10 = $ft10b;
+        $e10 = $E10b;
+        $m10 = $M10b;
+
+        //forcast11
+        $ft11 = $ft11b;
+        $e11 = $E11b;
+        $m11 = $M11b;
+
+        //forcast12
+        $ft12 = $ft12b;
+        $e12 = $E12b;
+        $m12 = $M12b;
+    } else if ($cari == $MAE03) {
+        //forcast2
+        $alpa = $alpa3;
+        $ft2 = $ft2c;
+        $e2 = $E2c;
+        $m2 = $M2c;
+
+        //forcast3
+        $ft3 = $ft3c;
+        $e3 = $E3c;
+        $m3 = $M3c;
+
+        //forcast4
+        $ft4 = $ft4c;
+        $e4 = $E4c;
+        $m4 = $M4c;
+
+        //forcast5
+        $ft5 = $ft5c;
+        $e5 = $E5c;
+        $m5 = $M5c;
+
+        //forcast6
+        $ft6 = $ft6c;
+        $e6 = $E6c;
+        $m6 = $M6c;
+
+        //forcast7
+        $ft7 = $ft7c;
+        $e7 = $E7c;
+        $m7 = $M7c;
+
+        //forcast8
+        $ft8 = $ft8c;
+        $e8 = $E8c;
+        $m8 = $M8c;
+
+        //forcast9
+        $ft9 = $ft9c;
+        $e9 = $E9c;
+        $m9 = $M9c;
+
+        //forcast10
+        $ft10 = $ft10c;
+        $e10 = $E10c;
+        $m10 = $M10c;
+
+        //forcast11
+        $ft11 = $ft11c;
+        $e11 = $E11c;
+        $m11 = $M11c;
+
+        //forcast12
+        $ft12 = $ft12c;
+        $e12 = $E12c;
+        $m12 = $M12c;
+    } else if ($cari == $MAE04) {
+        //forcast2
+        $alpa = $alpa4;
+        $ft2 = $ft2d;
+        $e2 = $E2d;
+        $m2 = $M2d;
+
+        //forcast3
+        $ft3 = $ft3d;
+        $e3 = $E3d;
+        $m3 = $M3d;
+
+        //forcast4
+        $ft4 = $ft4d;
+        $e4 = $E4d;
+        $m4 = $M4d;
+
+        //forcast5
+        $ft5 = $ft5d;
+        $e5 = $E5d;
+        $m5 = $M5d;
+
+        //forcast6
+        $ft6 = $ft6d;
+        $e6 = $E6d;
+        $m6 = $M6d;
+
+        //forcast7
+        $ft7 = $ft7d;
+        $e7 = $E7d;
+        $m7 = $M7d;
+
+        //forcast8
+        $ft8 = $ft8d;
+        $e8 = $E8d;
+        $m8 = $M8d;
+
+        //forcast9
+        $ft9 = $ft9d;
+        $e9 = $E9d;
+        $m9 = $M9d;
+
+        //forcast10
+        $ft10 = $ft10d;
+        $e10 = $E10d;
+        $m10 = $M10d;
+
+        //forcast11
+        $ft11 = $ft11d;
+        $e11 = $E11d;
+        $m11 = $M11d;
+
+        //forcast12
+        $ft12 = $ft12d;
+        $e12 = $E12d;
+        $m12 = $M12d;
+    } else if ($cari == $MAE05) {
+        //forcast2
+        $alpa = $alpa5;
+        $ft2 = $ft2e;
+        $e2 = $E2e;
+        $m2 = $M2e;
+
+        //forcast3
+        $ft3 = $ft3e;
+        $e3 = $E3e;
+        $m3 = $M3e;
+
+        //forcast4
+        $ft4 = $ft4e;
+        $e4 = $E4e;
+        $m4 = $M4e;
+
+        //forcast5
+        $ft5 = $ft5e;
+        $e5 = $E5e;
+        $m5 = $M5e;
+
+        //forcast6
+        $ft6 = $ft6e;
+        $e6 = $E6e;
+        $m6 = $M6e;
+
+        //forcast7
+        $ft7 = $ft7e;
+        $e7 = $E7e;
+        $m7 = $M7e;
+
+        //forcast8
+        $ft8 = $ft8e;
+        $e8 = $E8e;
+        $m8 = $M8e;
+
+        //forcast9
+        $ft9 = $ft9e;
+        $e9 = $E9e;
+        $m9 = $M9e;
+
+        //forcast10
+        $ft10 = $ft10e;
+        $e10 = $E10e;
+        $m10 = $M10e;
+
+        //forcast11
+        $ft11 = $ft11e;
+        $e11 = $E11e;
+        $m11 = $M11e;
+
+        //forcast12
+        $ft12 = $ft12e;
+        $e12 = $E12e;
+        $m12 = $M12e;
+    } else if ($cari == $MAE06) {
+        //forcast2
+        $alpa = $alpa6;
+        $ft2 = $ft2f;
+        $e2 = $E2f;
+        $m2 = $M2f;
+
+        //forcast3
+        $ft3 = $ft3f;
+        $e3 = $E3f;
+        $m3 = $M3f;
+
+        //forcast4
+        $ft4 = $ft4f;
+        $e4 = $E4f;
+        $m4 = $M4f;
+
+        //forcast5
+        $ft5 = $ft5f;
+        $e5 = $E5f;
+        $m5 = $M5f;
+
+        //forcast6
+        $ft6 = $ft6f;
+        $e6 = $E6f;
+        $m6 = $M6f;
+
+        //forcast7
+        $ft7 = $ft7f;
+        $e7 = $E7f;
+        $m7 = $M7f;
+
+        //forcast8
+        $ft8 = $ft8f;
+        $e8 = $E8f;
+        $m8 = $M8f;
+
+        //forcast9
+        $ft9 = $ft9f;
+        $e9 = $E9f;
+        $m9 = $M9f;
+
+        //forcast10
+        $ft10 = $ft10f;
+        $e10 = $E10f;
+        $m10 = $M10f;
+
+        //forcast11
+        $ft11 = $ft11f;
+        $e11 = $E11f;
+        $m11 = $M11f;
+
+        //forcast12
+        $ft12 = $ft12f;
+        $e12 = $E12f;
+        $m12 = $M12f;
+    } else if ($cari == $MAE07) {
+        //forcast2
+        $alpa = $alpa7;
+        $ft2 = $ft2g;
+        $e2 = $E2g;
+        $m2 = $M2g;
+
+        //forcast3
+        $ft3 = $ft3g;
+        $e3 = $E3g;
+        $m3 = $M3g;
+
+        //forcast4
+        $ft4 = $ft4g;
+        $e4 = $E4g;
+        $m4 = $M4g;
+
+        //forcast5
+        $ft5 = $ft5g;
+        $e5 = $E5g;
+        $m5 = $M5g;
+
+        //forcast6
+        $ft6 = $ft6g;
+        $e6 = $E6g;
+        $m6 = $M6g;
+
+        //forcast7
+        $ft7 = $ft7g;
+        $e7 = $E7g;
+        $m7 = $M7g;
+
+        //forcast8
+        $ft8 = $ft8g;
+        $e8 = $E8g;
+        $m8 = $M8g;
+
+        //forcast9
+        $ft9 = $ft9g;
+        $e9 = $E9g;
+        $m9 = $M9g;
+
+        //forcast10
+        $ft10 = $ft10g;
+        $e10 = $E10g;
+        $m10 = $M10g;
+
+        //forcast11
+        $ft11 = $ft11g;
+        $e11 = $E11g;
+        $m11 = $M11g;
+
+        //forcast12
+        $ft12 = $ft12g;
+        $e12 = $E12g;
+        $m12 = $M12g;
+    } else if ($cari == $MAE08) {
+        //forcast2
+        $alpa = $alpa8;
+        $ft2 = $ft2h;
+        $e2 = $E2h;
+        $m2 = $M2h;
+
+        //forcast3
+        $ft3 = $ft3h;
+        $e3 = $E3h;
+        $m3 = $M3h;
+
+        //forcast4
+        $ft4 = $ft4h;
+        $e4 = $E4h;
+        $m4 = $M4h;
+
+        //forcast5
+        $ft5 = $ft5h;
+        $e5 = $E5h;
+        $m5 = $M5h;
+
+        //forcast6
+        $ft6 = $ft6h;
+        $e6 = $E6h;
+        $m6 = $M6h;
+
+        //forcast7
+        $ft7 = $ft7h;
+        $e7 = $E7h;
+        $m7 = $M7h;
+
+        //forcast8
+        $ft8 = $ft8h;
+        $e8 = $E8h;
+        $m8 = $M8h;
+
+        //forcast9
+        $ft9 = $ft9h;
+        $e9 = $E9h;
+        $m9 = $M9h;
+
+        //forcast10
+        $ft10 = $ft10h;
+        $e10 = $E10h;
+        $m10 = $M10h;
+
+        //forcast11
+        $ft11 = $ft11h;
+        $e11 = $E11h;
+        $m11 = $M11h;
+
+        //forcast12
+        $ft12 = $ft12h;
+        $e12 = $E12h;
+        $m12 = $M12h;
+    } else if ($cari == $MAE09) {
+        //forcast2
+        $alpa = $alpa9;
+        $ft2 = $ft2i;
+        $e2 = $E2i;
+        $m2 = $M2i;
+
+        //forcast3
+        $ft3 = $ft3i;
+        $e3 = $E3i;
+        $m3 = $M3i;
+
+        //forcast4
+        $ft4 = $ft4i;
+        $e4 = $E4i;
+        $m4 = $M4i;
+
+        //forcast5
+        $ft5 = $ft5i;
+        $e5 = $E5i;
+        $m5 = $M5i;
+
+        //forcast6
+        $ft6 = $ft6i;
+        $e6 = $E6i;
+        $m6 = $M6i;
+
+        //forcast7
+        $ft7 = $ft7i;
+        $e7 = $E7i;
+        $m7 = $M7i;
+
+        //forcast8
+        $ft8 = $ft8i;
+        $e8 = $E8i;
+        $m8 = $M8i;
+
+        //forcast9
+        $ft9 = $ft9i;
+        $e9 = $E9i;
+        $m9 = $M9i;
+
+        //forcast10
+        $ft10 = $ft10i;
+        $e10 = $E10i;
+        $m10 = $M10i;
+
+        //forcast11
+        $ft11 = $ft11i;
+        $e11 = $E11i;
+        $m11 = $M11i;
+
+        //forcast12
+        $ft12 = $ft12i;
+        $e12 = $E12i;
+        $m12 = $M12i;
+    }
     //kirim ke tabel data ini
 }
