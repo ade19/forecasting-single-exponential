@@ -7,7 +7,7 @@ class Forcast extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        // $this->load->model('Barang_m');
+        $this->load->model('Forcast_m');
         $this->load->helper('aw_helper');
     }
 
@@ -29,10 +29,14 @@ class Forcast extends CI_Controller
 
             $kode = $this->input->post('kode');
             $tahun = $this->input->post('tahun');
-
+            $dtbarang = $this->db->query("SELECT nm_barang FROM barang WHERE kode='$kode'");
+            $dt = $dtbarang->row()->nm_barang;
             //membuat session bulan yang dicari
             $bulan = $this->input->post('bulan');
             $s['bul'] = konversibulan($bulan);
+            $s['barang'] = $dt;
+            $s['kode'] = $kode;
+            $s['tahun'] = $tahun;
             $this->session->set_userdata($s);
 
             //aktual 1
@@ -105,26 +109,39 @@ class Forcast extends CI_Controller
     {
         if ($this->session->userdata('logged_in') != "" && $this->session->userdata('level') == "Stocker") {
             $kode = $this->input->post('kode');
-            $gdg = $this->input->post('gdg');
-            $barang = $this->input->post('nm_barang');
-            $harga = $this->input->post('harga');
-            $satuan = $this->input->post('id_satuan');
-            $supplier = $this->input->post('id_supplier');
+            $bln = $this->input->post('bulan');
+            $tahun = $this->input->post('tahun');
 
-            $d = array(
-                'kode' => $kode,
-                'gdg' => $gdg,
-                'nm_barang' => $barang,
-                'harga' => $harga,
-                'id_unit' => $satuan,
-                'id_supplier' => $supplier
-            );
+            //cek data didatabase untuk validasi
+            $query = $this->db->query("SELECT * FROM peramalan WHERE kode='$kode' AND bulan='$bln' AND tahun='$tahun'");
+            if ($query->num_rows() > 0) {
+                $data = $query->num_rows();
+            } else {
+                $data = 0;
+            }
+            if ($data < 1) {
+                $alpa = $this->input->post('alpa');
+                $forcasting = $this->input->post('forcasting');
+                $MAE = $this->input->post('MAE');
 
-            $this->Barang_m->input($d, 'barang');
+                $d = array(
+                    'kode' => $kode,
+                    'bulan' => $bln,
+                    'tahun' => $tahun,
+                    'alpha' => $alpa,
+                    'forcasting' => $forcasting,
+                    'MAE' => $MAE
+                );
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data Berhasil ditambahkan <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                $this->Forcast_m->input($d, 'peramalan');
 
-            redirect('stocker/barang');
+                $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data Forcasting <b>' . $this->session->userdata('barang') . '</b> Pada Bulan ' . $bln . ' tahun ' . $tahun . ' Berhasil ditambahkan <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+
+                redirect('stocker/forcast');
+            } else {
+                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Data Forcasting <b>' . $this->session->userdata('barang') . '</b> Pada Bulan ' . $bln . ' tahun ' . $tahun . ' <b>GAGAL</b> ditambahkan !!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+                redirect('stocker/forcast');
+            }
         } else {
             redirect('auth/logout');
         }

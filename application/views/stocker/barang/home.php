@@ -13,9 +13,6 @@ $this->load->view('tema/sidebar');
                     <p align="left">
                         <a href="<?php echo base_url(); ?>stocker/barang/tambah" class="btn btn-sm btn-rounded btn-primary"><i class="glyphicon glyphicon-plus glyphicon-white"></i> Tambah Data</a></p>
 
-                    <!------ Message berhasil atau tidak ---------->
-                    <?php echo $this->session->userdata('message'); ?>
-
                     <table id="example" class="table table-striped table-bordered display" style="width:100%">
                         <thead>
                             <tr>
