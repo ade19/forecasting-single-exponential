@@ -122,12 +122,6 @@
                 ?>
                 <a class="waves-effect" href="<?= site_url('stocker/req'); ?>"><i class="menu-icon mdi mdi-cart"></i><span>Request Order</span></a>
                 </li>
-            </ul>
-            <!-- /.menu js__accordion -->
-            <h5 class="title">Extra</h5>
-            <!-- /.title -->
-
-            <ul class="menu js__accordion">
 
                 <!-- 7. Menu Forcasting -->
                 <?php
@@ -140,6 +134,12 @@
                 ?>
                 <a class="waves-effect" href="<?= base_url(); ?>stocker/forcast"><i class="menu-icon mdi mdi-recycle"></i><span>Peramalan Stok Barang</span></a>
                 </li>
+            </ul>
+            <!-- /.menu js__accordion -->
+            <h5 class="title">Extra</h5>
+            <!-- /.title -->
+
+            <ul class="menu js__accordion">
 
                 <!-- 8. Laporan -->
                 <li>

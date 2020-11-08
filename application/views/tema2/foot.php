@@ -24,23 +24,6 @@
 <!-- Select2 -->
 <script src="<?= base_url(); ?>assets/plugin/select2/js/select2.min.js"></script>
 
-<!-- Flot Chart -->
-<script src="<?= base_url(); ?>assets/plugin/chart/plot/jquery.flot.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugin/chart/plot/jquery.flot.tooltip.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugin/chart/plot/jquery.flot.categories.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugin/chart/plot/jquery.flot.pie.min.js"></script>
-<script src="<?= base_url(); ?>assets/plugin/chart/plot/jquery.flot.stack.min.js"></script>
-<script src="<?= base_url(); ?>assets/scripts/chart.flot.init.min.js"></script>
-
-<!-- Sparkline Chart -->
-<script src="<?= base_url(); ?>assets/plugin/chart/sparkline/jquery.sparkline.min.js"></script>
-<script src="<?= base_url(); ?>assets/scripts/chart.sparkline.init.min.js"></script>
-
-<!-- FullCalendar -->
-<script src="<?= base_url(); ?>assets/plugin/moment/moment.js"></script>
-<script src="<?= base_url(); ?>assets/plugin/fullcalendar/fullcalendar.min.js"></script>
-<script src="<?= base_url(); ?>assets/scripts/fullcalendar.init.js"></script>
-
 <!-- Data Tables -->
 <script src="<?= base_url(); ?>assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
@@ -52,6 +35,27 @@
 
 <!-- Demo Scripts -->
 <script src="<?= base_url(); ?>assets/scripts/form.demo.min.js"></script>
+
+<script>
+    var serries = JSON.parse(`<?php echo $data; ?>`);
+    console.log(serries);
+
+    Morris.Line({
+        element: 'graph',
+        data: <?php echo $data; ?>,
+        xkey: 'bulan',
+        ykeys: ['forcasting', 'aktual'],
+        labels: ['forcasting', 'aktual'],
+        fillOpacity: 0.6,
+        hideHover: 'auto',
+        behaveLikeLine: true,
+        resize: true,
+        pointFillColors: ['yellow'],
+        pointStrokeColors: ['red'],
+        lineColors: ['#fcb03b', '#ea65a2']
+    });
+</script>
+
 </body>
 
 </html>

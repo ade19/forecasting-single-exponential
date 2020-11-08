@@ -8,6 +8,7 @@ class Home extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Dashboard_m');
+		$this->load->model('Chart_model');
 		$this->load->helper('aw_helper');
 	}
 
@@ -24,6 +25,9 @@ class Home extends CI_Controller
 			$d['dtrequest'] = $this->Dashboard_m->request();
 			$d['rusak'] = $this->Dashboard_m->rusak();
 
+			$data = $this->Chart_model->get_data()->result();
+			$d['data'] = json_encode($data);
+
 			$this->load->view('dashboard/stocker', $d);
 		} else if ($this->session->userdata('logged_in') != "" && $this->session->userdata('level') == "Manager") {
 
@@ -32,6 +36,9 @@ class Home extends CI_Controller
 			$d['dtrequest'] = $this->Dashboard_m->request();
 			$d['rusak'] = $this->Dashboard_m->rusak();
 			$d['user'] = $this->Dashboard_m->user();
+
+			$data = $this->Chart_model->get_data()->result();
+			$d['data'] = json_encode($data);
 
 			$this->load->view('dashboard/manager', $d);
 		} else {

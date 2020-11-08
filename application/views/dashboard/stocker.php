@@ -54,7 +54,7 @@
                 <div class="col-lg-4 col-xs-12">
                     <a href="<?= site_url('stocker/supplier'); ?>">
                         <div class="box-content">
-                            <h4 class="box-title text-success">Data Supplier</h4>
+                            <h4 class="box-title text-danger">Data Supplier</h4>
                             <div class="content widget-stat">
                                 <div id="traffic-sparkline-chart-3" class="left-content"></div>
                                 <!-- /#traffic-sparkline-chart-3 -->
@@ -73,39 +73,21 @@
                 </div>
                 <!-- /.col-lg-4 col-xs-12 -->
 
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-lg-12 col-xs-12">
                     <div class="box-content">
-                        <h4 class="box-title">Grafik</h4>
-                        <div id="bar-morris-chart" class="morris-chart" style="height: 240px"></div>
+                        <h4 class="box-title text-warning">Forcasting Stock Barang</h4>
+                        <div id="lines-morris-chart" class="morris-chart" style="height: 200px"></div>
                         <div class="text-center">
                             <ul class="list-inline morris-chart-detail-list">
-                                <li><i class="fa fa-circle"></i>Series A</li>
-                                <li><i class="fa fa-circle"></i>Series B</li>
-                                <li><i class="fa fa-circle"></i>Series C</li>
+                                <li><i class="fa fa-circle"></i>Forcasting</li>
+                                <li><i class="fa fa-circle"></i>Aktual</li>
                             </ul>
                         </div>
-                        <!-- /#bar-morris-chart.morris-chart -->
+                        <!-- /#lines-morris-chart.morris-chart -->
                     </div>
                     <!-- /.box-content -->
                 </div>
-                <!-- /.col-lg-6 col-xs-12 -->
-
-                <div class="col-lg-6 col-xs-12">
-                    <div class="box-content">
-                        <h4 class="box-title">Grafik Barang</h4>
-                        <div id="donut-morris-chart" class="morris-chart" style="height: 240px"></div>
-                        <div class="text-center">
-                            <ul class="list-inline morris-chart-detail-list">
-                                <li><i class="fa fa-circle"></i>Series A</li>
-                                <li><i class="fa fa-circle"></i>Series B</li>
-                                <li><i class="fa fa-circle"></i>Series C</li>
-                            </ul>
-                        </div>
-                        <!-- /#donut-morris-chart.morris-chart -->
-                    </div>
-                    <!-- /.box-content -->
-                </div>
-                <!-- /.col-lg-6 col-xs-12 -->
+                <!-- /.col-lg-12 col-xs-12 -->
             </div>
             <!-- /.row -->
 
