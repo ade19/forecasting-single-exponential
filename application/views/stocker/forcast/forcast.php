@@ -31,7 +31,7 @@ if ($n == "1") {
         $data = 0;
     }
 
-    if ($data == 1 && $nextyear == false) {
+    if ($data == 0 && $nextyear == false) {
         //forcast 1
         $alpa = $alpa1;
         $cari = 0;

@@ -75,8 +75,36 @@
 
                 <div class="col-lg-12 col-xs-12">
                     <div class="box-content">
-                        <h4 class="box-title text-warning">Forcasting Stock Barang</h4>
-                        <div id="lines-morris-chart" class="morris-chart" style="height: 200px"></div>
+                        <h4 class="box-title text-warning">Forcasting Stock Barang <span class="text-success">[<?= $namabarang; ?>]<span></h4>
+                        <div id="graph" class="morris-chart" style="height: 200px"></div>
+
+                        <!-- /.box-title -->
+                        <div class="dropdown js__drop_down">
+                            <form method="POST" action="<?= base_url() ?>dashboard/home">
+                                <select class="form-control select2_1" name="year" id="year">
+                                    <?php
+                                    foreach ($tahun->result_array() as $dt) {
+                                    ?>
+                                        <option value="<?php echo $dt['tahun']; ?>"><?php echo $dt['tahun'] ?></option>
+                                    <?php
+                                    }
+                                    ?>
+                                </select>
+
+                                <select class="form-control select2_1" name="code" id="code">
+                                    <?php
+                                    foreach ($barang->result_array() as $org) {
+                                    ?>
+                                        <option value="<?php echo $org['kode']; ?>"><?php echo $org['kode'] . ' - ' . $org['nm_barang']; ?></option>
+                                    <?php
+                                    }
+                                    ?>
+                                </select>
+
+                                <button class="btn btn-sm btn-primary btn-bordered">Proses</button>
+                            </form>
+                        </div>
+
                         <div class="text-center">
                             <ul class="list-inline morris-chart-detail-list">
                                 <li><i class="fa fa-circle"></i>Forcasting</li>

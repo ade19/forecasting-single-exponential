@@ -16,6 +16,39 @@
 <script src="<?= base_url(); ?>assets/plugin/sweet-alert/sweetalert.min.js"></script>
 <script src="<?= base_url(); ?>assets/plugin/waves/waves.min.js"></script>
 
+<script>
+    function logout() {
+        swal({
+                title: "Keluar?",
+                text: "Anda Yakin Ingin Keluar?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Ya, Saya Yakin",
+                cancelButtonText: "Tidak, Tetap disini !",
+                closeOnConfirm: false,
+                closeOnCancel: false,
+                confirmButtonColor: "#f60e0e"
+            },
+            function(isConfirm) {
+                if (isConfirm) {
+                    $.ajax({
+                        url: '<?= base_url() ?>auth/logout',
+                        error: function() {
+                            alert('Something is wrong');
+                        },
+                        success: function(data) {
+                            swal("Berhasil logout !", "Selamat Bertemu Kembali :)", "success");
+                            location.reload();
+                        }
+                    });
+                } else {
+                    window.location = "<?= base_url() ?>"
+                }
+            });
+    }
+</script>
+
 <!-- Morris Chart -->
 <script src="<?= base_url(); ?>assets/plugin/chart/morris/morris.min.js"></script>
 <script src="<?= base_url(); ?>assets/plugin/chart/morris/raphael-min.js"></script>
@@ -48,9 +81,13 @@
         labels: ['forcasting', 'aktual'],
         fillOpacity: 0.6,
         hideHover: 'auto',
+        parseTime: false,
+        hideHover: true,
+        lineWidth: '6px',
+        stacked: true,
         behaveLikeLine: true,
         resize: true,
-        pointFillColors: ['yellow'],
+        pointFillColors: ['white'],
         pointStrokeColors: ['red'],
         lineColors: ['#fcb03b', '#ea65a2']
     });

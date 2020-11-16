@@ -26,7 +26,7 @@
                 <div class="control-list">
                     <div class="control-item"><a href="profile.html"><i class="fa fa-user"></i> Profile</a></div>
                     <div class="control-item"><a href="#"><i class="fa fa-gear"></i> Settings</a></div>
-                    <div class="control-item"><a href="<?= site_url('auth/logout'); ?>"><i class="fa fa-sign-out"></i> Log out</a></div>
+                    <div class="control-item"><a onclick="logout()"><i class="fa fa-sign-out"></i> Log out</a></div>
                 </div>
                 <!-- /.control-list -->
             </div>
@@ -117,7 +117,7 @@
                 </li>
 
                 <li>
-                    <a class="waves-effect" href="<?= base_url(); ?>auth/logout"><i class="menu-icon mdi mdi-logout"></i><span>Logout</span></a>
+                    <a class="waves-effect" onclick="logout()"><i class="menu-icon mdi mdi-logout"></i><span>Logout</span></a>
                 </li>
             </ul>
             <!-- /.menu js__accordion -->
@@ -143,7 +143,7 @@
         </div>
         <!-- /.ico-item -->
         <a href="#" class="ico-item pulse"><span class="ico-item mdi mdi-bell notice-alarm js__toggle_open" data-target="#notification-popup"></span></a>
-        <a href="<?= site_url('auth/logout'); ?>" class="ico-item mdi mdi-logout js__logout"></a>
+        <a href="#" class="ico-item mdi mdi-logout" onclick="logout()"></a>
     </div>
     <!-- /.pull-right -->
 </div>

@@ -34,4 +34,12 @@ class Barang_m extends CI_Model
         $this->db->where($where);
         $this->db->delete($table);
     }
+
+    function getDataBarang($kode)
+    {
+        $this->db->select('*');
+        $this->db->from('barang');
+        $this->db->where('kode', $kode);
+        return $this->db->get()->row();
+    }
 }
