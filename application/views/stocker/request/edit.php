@@ -20,6 +20,7 @@ foreach ($request->result_array() as $i) :
                             <?php echo form_open_multipart('stocker/req/simpan_ubah', 'class="form-horizontal"'); ?>
 
                             <div class="form-group">
+                                <input type="hidden" name="id_request" value="<?= $this->uri->segment(4); ?>">
                                 <label for="kode" class="col-sm-2 control-label">Kode Barang</label>
                                 <div class="col-sm-10">
                                     <select class="form-control select2_1" name="kodeb" id="kodeb" onchange="changeValue(this.value)" required>

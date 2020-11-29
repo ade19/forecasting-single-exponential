@@ -109,7 +109,9 @@ class Forcast extends CI_Controller
     {
         if ($this->session->userdata('logged_in') != "" && $this->session->userdata('level') == "Stocker") {
             $kode = $this->input->post('kode');
-            $bln = $this->input->post('bulan');
+            $bulan = $this->input->post('bulan');
+            $bln = konversibulan($this->input->post('bulan'));
+
             $tahun = $this->input->post('tahun');
 
             //cek data didatabase untuk validasi
@@ -126,7 +128,8 @@ class Forcast extends CI_Controller
 
                 $d = array(
                     'kode' => $kode,
-                    'bulan' => $bln,
+                    'bulan' => $bulan,
+                    'bln' => $bln,
                     'tahun' => $tahun,
                     'alpha' => $alpa,
                     'forcasting' => $forcasting,

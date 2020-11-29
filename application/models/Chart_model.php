@@ -11,6 +11,7 @@ class Chart_model extends CI_Model
                         Month(tgl_keluar) as bln, SUM(qty_keluar) as aktual
                         from pengeluaran WHERE Year(tgl_keluar)="' . $th . '" 
                         AND kode="' . $kode . '" GROUP BY bln) AS keluar', 'p.kode=keluar.kode and p.bln=keluar.bln', 'left');
+        $this->db->where('p.kode', $kode);
         return $this->db->get()->result();
     }
 }

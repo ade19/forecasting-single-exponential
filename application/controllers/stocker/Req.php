@@ -43,7 +43,6 @@ class Req extends CI_Controller
             $d = array(
                 'tgl_request' => $tgl,
                 'kode' => $kode,
-                'kode' => $kode,
                 'qty_barang' => $jumlah,
                 'tgl_kirim' => $tgl_kirim,
                 'status_request' => $status,
@@ -75,25 +74,26 @@ class Req extends CI_Controller
     public function simpan_ubah()
     {
         if ($this->session->userdata('logged_in') != "" && $this->session->userdata('level') == "Stocker") {
-            $id_kategori = $this->input->post('idcat');
-            $kategori = $this->input->post('kategori');
-            $ket = $this->input->post('ket');
+            $id = $this->input->post('id_request');
+            $kode = $this->input->post('kodeb');
+            $jumlah = $this->input->post('jumlah');
+            $tgl_kirim = $this->input->post('tgl_kirim');
 
             $d = array(
-                'idcat' => $id_kategori,
-                'category' => $kategori,
-                'keterangan' => $ket
+                'kode' => $kode,
+                'qty_barang' => $jumlah,
+                'tgl_kirim' => $tgl_kirim
             );
 
             $where = array(
-                'idcat' => $id_kategori
+                'id_request' => $id
             );
 
-            $this->Kategori_m->edit_simpan($where, $d, 'kategori');
+            $this->Req_m->edit_simpan($where, $d, 'request');
 
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Data Berhasil diubah <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
 
-            redirect('stocker/kategori');
+            redirect('stocker/req');
         } else {
             redirect('auth/logout');
         }

@@ -200,23 +200,29 @@ include('forcast.php');
                                     <td>
                                         <?php
                                         if ($n == 1) {
-                                            echo $ft1;
+                                            // echo $ft1;
                                             $ff = number_format($ft1, 3);
+                                            echo $ff;
                                         } else if ($n == 2) {
-                                            echo $ft2;
+                                            // echo $ft2;
                                             $ff = number_format($ft2, 3);
+                                            echo $ff;
                                         } else if ($n == 3) {
-                                            echo $ft3;
+                                            // echo $ft3;
                                             $ff = number_format($ft3, 3);
+                                            echo $ff;
                                         } else if ($n == 4) {
-                                            echo $ft4;
+                                            // echo $ft4;
                                             $ff = number_format($ft4, 3);
+                                            echo $ff;
                                         } else if ($n == 5) {
-                                            echo $ft5;
+                                            // echo $ft5;
                                             $ff = number_format($ft5, 3);
+                                            echo $ff;
                                         } else if ($n == 6) {
-                                            echo $ft6;
+                                            // echo $ft6;
                                             $ff = number_format($ft6, 3);
+                                            echo $ff;
                                         } else if ($n == 7) {
                                             echo $ft7;
                                             $ff = number_format($ft7, 3);
@@ -224,17 +230,21 @@ include('forcast.php');
                                             echo $ft8;
                                             $ff = number_format($ft8, 3);
                                         } else if ($n == 9) {
-                                            echo $ft9;
+                                            // echo $ft9;
                                             $ff = number_format($ft9, 3);
+                                            echo $ff;
                                         } else if ($n == 10) {
-                                            echo $ft10;
+                                            // echo $ft10;
                                             $ff = number_format($ft10, 3);
+                                            echo $ff;
                                         } else if ($n == 11) {
-                                            echo $ft11;
+                                            // echo $ft11;
                                             $ff = number_format($ft11, 3);
+                                            echo $ff;
                                         } else if ($n == 12) {
-                                            echo $ft12;
+                                            //echo $ft12;
                                             $ff = number_format($ft12, 3);
+                                            echo $ff;
                                         }
                                         ?></td>
                                     <td></td>
