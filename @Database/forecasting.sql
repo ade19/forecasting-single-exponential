@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Nov 2020 pada 11.21
+-- Waktu pembuatan: 29 Nov 2020 pada 13.38
 -- Versi server: 10.4.6-MariaDB
 -- Versi PHP: 7.3.9
 
@@ -77,6 +77,7 @@ INSERT INTO `orders` (`id_order`, `id_request`, `harga_total`, `approval`, `stat
 ('QJO9637', 34, 5460000, 'Manager A&W', 'completed', '2020-11-30'),
 ('QNI3751', 10, 12000000, 'Manager A&W', 'completed', '2020-05-30'),
 ('QNV6824', 7, 27500000, 'Manager A&W', 'completed', '2020-04-30'),
+('RPV5891', 36, 11000000, 'Manager A&W', 'completed', '2020-11-20'),
 ('SCE1798', 5, 27500000, 'Manager A&W', 'completed', '2020-04-01'),
 ('TAO9351', 29, 13915000, 'Manager A&W', 'completed', '2020-10-01'),
 ('TCO9405', 14, 16890000, 'Manager A&W', 'completed', '2020-07-31'),
@@ -130,7 +131,8 @@ INSERT INTO `penerimaan` (`id_penerimaan`, `tgl_terima`, `id_order`, `qty_awal`,
 (37, '2020-11-01', 'ADH5209', '9.00', '150.00', '0.00', '-', '159.00', 'Admin A&W Restaurant'),
 (38, '2020-12-01', 'QJO9637', '4.00', '182.00', '0.00', '', '186.00', 'Admin A&W Restaurant'),
 (39, '2020-12-01', 'UKG7194', '2.00', '221.00', '0.00', '-', '223.00', 'Admin A&W Restaurant'),
-(40, '2020-11-02', 'NFC3968', '0.00', '200.00', '0.00', '-', '200.00', 'Admin A&W Restaurant');
+(40, '2020-11-02', 'NFC3968', '0.00', '200.00', '0.00', '-', '200.00', 'Admin A&W Restaurant'),
+(41, '2020-11-20', 'RPV5891', '0.00', '200.00', '0.00', '', '200.00', 'Admin A&W Restaurant');
 
 -- --------------------------------------------------------
 
@@ -181,7 +183,8 @@ INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_keluar`, `kode`, `beg_qty`, `q
 (37, '2020-12-29', 'MDK06273', '223.00', '223.00', '0.00', 1, 'Admin A&W Restaurant'),
 (38, '2020-12-29', 'GIS35761', '186.00', '186.00', '0.00', 1, 'Admin A&W Restaurant'),
 (39, '2021-01-17', 'MDK06273', '200.00', '200.00', '0.00', 1, 'Admin A&W Restaurant'),
-(40, '2021-01-01', 'MDK06273', '200.00', '200.00', '0.00', 1, 'Admin A&W Restauran');
+(40, '2021-01-01', 'MDK06273', '200.00', '200.00', '0.00', 1, 'Admin A&W Restauran'),
+(41, '2020-11-20', 'MDK06273', '200.00', '100.00', '100.00', 1, 'Admin A&W Restaurant');
 
 -- --------------------------------------------------------
 
@@ -193,6 +196,7 @@ CREATE TABLE `peramalan` (
   `id` int(11) NOT NULL,
   `kode` varchar(10) NOT NULL,
   `bulan` varchar(10) NOT NULL,
+  `bln` int(11) NOT NULL,
   `tahun` int(4) NOT NULL,
   `alpha` float(1,1) NOT NULL,
   `forcasting` decimal(10,3) NOT NULL,
@@ -203,18 +207,21 @@ CREATE TABLE `peramalan` (
 -- Dumping data untuk tabel `peramalan`
 --
 
-INSERT INTO `peramalan` (`id`, `kode`, `bulan`, `tahun`, `alpha`, `forcasting`, `MAE`) VALUES
-(16, 'MDK06273', 'Januari', 2020, 0.1, '263.000', '0.000'),
-(17, 'MDK06273', 'Februari', 2020, 0.1, '263.000', '0.000'),
-(18, 'MDK06273', 'Maret', 2020, 0.1, '259.300', '18.500'),
-(19, 'MDK06273', 'April', 2020, 0.1, '270.070', '48.233'),
-(20, 'MDK06273', 'Mei', 2020, 0.9, '381.827', '51.508'),
-(21, 'MDK06273', 'Juni', 2020, 0.1, '279.907', '55.239'),
-(22, 'MDK06273', 'Juli', 2020, 0.1, '304.316', '86.714'),
-(23, 'MDK06273', 'Agustus', 2020, 0.1, '305.884', '76.567'),
-(24, 'MDK06273', 'September', 2020, 0.1, '298.696', '75.982'),
-(25, 'MDK06273', 'Oktober', 2020, 0.1, '297.226', '69.172'),
-(30, 'MDK06273', 'November', 2020, 0.1, '287.904', '71.578');
+INSERT INTO `peramalan` (`id`, `kode`, `bulan`, `bln`, `tahun`, `alpha`, `forcasting`, `MAE`) VALUES
+(16, 'MDK06273', 'Januari', 1, 2020, 0.1, '263.000', '0.000'),
+(17, 'MDK06273', 'Februari', 2, 2020, 0.1, '263.000', '0.000'),
+(18, 'MDK06273', 'Maret', 3, 2020, 0.1, '259.300', '18.500'),
+(19, 'MDK06273', 'April', 4, 2020, 0.1, '270.070', '48.233'),
+(20, 'MDK06273', 'Mei', 5, 2020, 0.9, '381.827', '51.508'),
+(21, 'MDK06273', 'Juni', 6, 2020, 0.1, '279.907', '55.239'),
+(22, 'MDK06273', 'Juli', 7, 2020, 0.1, '304.316', '86.714'),
+(23, 'MDK06273', 'Agustus', 8, 2020, 0.1, '305.884', '76.567'),
+(24, 'MDK06273', 'September', 9, 2020, 0.1, '298.696', '75.982'),
+(25, 'MDK06273', 'Oktober', 10, 2020, 0.1, '297.226', '69.172'),
+(30, 'MDK06273', 'November', 11, 2020, 0.1, '287.904', '71.578'),
+(42, 'GIS35761', 'Januari', 1, 2020, 0.1, '255.000', '0.000'),
+(43, 'GIS35761', 'Februari', 2, 2020, 0.1, '255.000', '0.000'),
+(44, 'GIS35761', 'Maret', 3, 2020, 0.1, '251.700', '16.500');
 
 -- --------------------------------------------------------
 
@@ -226,7 +233,7 @@ CREATE TABLE `request` (
   `id_request` int(11) NOT NULL,
   `tgl_request` date NOT NULL,
   `kode` varchar(10) NOT NULL,
-  `qty_barang` decimal(5,2) NOT NULL,
+  `qty_barang` decimal(10,2) NOT NULL,
   `tgl_kirim` date NOT NULL,
   `status_request` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -256,7 +263,9 @@ INSERT INTO `request` (`id_request`, `tgl_request`, `kode`, `qty_barang`, `tgl_k
 (32, '2020-11-01', 'MDK06273', '135.00', '2020-11-01', 'approved'),
 (33, '2020-11-29', 'MDK06273', '221.00', '2020-11-30', 'approved'),
 (34, '2020-11-29', 'GIS35761', '182.00', '2020-11-30', 'approved'),
-(35, '2020-11-02', 'MDK06273', '200.00', '2021-01-01', 'approved');
+(35, '2020-11-02', 'MDK06273', '200.00', '2021-01-01', 'approved'),
+(36, '2020-11-20', 'MDK06273', '200.00', '2020-11-20', 'approved'),
+(38, '2020-11-23', 'GIS35761', '2000.00', '2020-11-23', 'proccessed');
 
 -- --------------------------------------------------------
 
@@ -301,7 +310,7 @@ CREATE TABLE `stock` (
 --
 
 INSERT INTO `stock` (`id_stock`, `kode`, `id_unit`, `quality`, `min_stock`, `status`) VALUES
-(1, 'MDK06273', 1, '0.00', '5.00', 'Stok Habis !'),
+(1, 'MDK06273', 1, '100.00', '5.00', 'Tersedia'),
 (2, 'GIS35761', 1, '0.00', '5.00', 'Stok Habis !');
 
 -- --------------------------------------------------------
@@ -347,7 +356,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id_user`, `username`, `password`, `nama_lengkap`, `foto`, `level`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin A&W Restaurant', '20200609-171613.jpg', 'Stocker'),
-(11, 'mg', 'b351bb9b0af6e4fc678749675c53ad67', 'Manager A&W', '20200909-202312.jpg', 'Manager');
+(11, 'mg', 'b351bb9b0af6e4fc678749675c53ad67', 'Manager A&W', '20201120-201436.png', 'Manager');
 
 --
 -- Indexes for dumped tables
@@ -421,25 +430,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT untuk tabel `penerimaan`
 --
 ALTER TABLE `penerimaan`
-  MODIFY `id_penerimaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_penerimaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengeluaran`
 --
 ALTER TABLE `pengeluaran`
-  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT untuk tabel `peramalan`
 --
 ALTER TABLE `peramalan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT untuk tabel `request`
 --
 ALTER TABLE `request`
-  MODIFY `id_request` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_request` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT untuk tabel `satuan`
